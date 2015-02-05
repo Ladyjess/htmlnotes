@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>
+Tables, forms, radio, submit
+</title>
+
+</head>
+
+
+<body>
+
+
+<table border="5" cellpadding="5" cellspacing="5">
+<thead>
+<th>fruits</th>
+<th>veggies</th>
+<th>country</th>
+</thead>
+<tfoot>
+  <tr>
+    <td colspan="3" align="center"> Thanks for reading!</td>
+  </tr>
+
+</tfoot>
+<tr>
+  <td>mango</td>
+ <td>carrot</td>
+ <td>japan</td>
+</tr>
+
+<tr>
+  <td>apple</td>
+  <td>broccoli</td>
+  <td>spain</td>
+  </tr>
+
+</table>
+<br>
+<br>
+<br>
+
+<fieldset>
+
+  <legend> Important </legend>  <!--(align="center")//<label for="username" id="username"> </label> -->
+
+</fieldset>
+
+<br>
+<!--Important to put correct data types for the browser to interact more easily.  -->
+
+<form action="/anotherpage" method="post" name="description">
+  <input type="text" name="username">Enter your username<br>
+  <br>
+  <input type="password" name="password">Enter your password<br>
+
+<br>
+<br>
+
+  <!-- Keep same name. Browser knows its a group and wont treat separately. If it is has a different name, you would be able to select multiple ones. When you want to de-select others use radio buttons. If you want to choose multiples, use check boxes. -->
+  <input type="radio" name="gender" value="male">Male<br>
+  <input type="radio" name="gender" value="female">Female</br>
+<br>
+<br>   <!--can put in:  id="samename" labelfor="samename" -->
+
+  <input type="checkbox" name="foods" value="Grapes">Grapes<br>
+  <input type="checkbox" name="foods" value="Apples">Apples<br>
+
+<br>
+<br>
+
+  <input type="submit" value="continue">onwards!<br>
+  <br>
+
+  <textarea name="essay" rows="10" cols="30"></textarea>
+
+
+<br>
+  <select>
+    <optgroup label="Middle East">
+      <option>Egypt</option>
+      <option>Morocco</option>
+    </optgroup>
+
+    <option>Japan</option>
+      <option>Australia</option>
+      <option>England</option>
+
+  </select>
+</form>
+
+
+
+
+</body>
